@@ -115,23 +115,8 @@ Publish the website in the LocalHost.
             font-weight: bold;
             margin: 0;
             text-transform: uppercase;
-        }
-
-        .author-photo {
-            width: 100px;
-            height: 120px;
-            border: 3px solid #ffffff;
-            background-color: #ffffff;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(94, 30, 206, 0.2);
-        }
-
-        .author-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
+        }   
+        </style>
 </head>
 <body>
 
@@ -161,7 +146,6 @@ Updated for 2025</p>
 
 </body>
 </html>
-
 ```
 ## OUTPUT:
 <img width="1919" height="1077" alt="Screenshot 2025-12-27 130641" src="https://github.com/user-attachments/assets/e9159f29-eafc-48c4-9a16-8c07ef004e4a" />
