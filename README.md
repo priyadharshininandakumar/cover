@@ -32,149 +32,139 @@ Publish the website in the LocalHost.
 
 ## PROGRAM:
 ```
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Book Cover</title>
-<style>
-    body {
-        background:#222;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        height:100vh;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Cover - PRIYADHARSHINI S N </title>
+    <style>
+        /* CSS stays inside the style tag */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: white;
+            font-family: 'serif', 'Times New Roman', Times, serif;
+        }
 
-    .book {
-        width:360px;
-        height:520px;
-        background: linear-gradient(#0b2a4a, #061c33);
-        color:white;
-        position:relative;
-        box-shadow:0 20px 40px rgba(0,0,0,0.7);
-        overflow:hidden;
-    }
+        .book-cover {
+            width: 450px;
+            height: 650px;
 
-    /* Red Ribbon */
-    .ribbon {
-        position:absolute;
-        top:0;
-        left:0;
-        background:#d32f2f;
-        color:white;
-        padding:8px 12px;
-        font-size:12px;
-        font-weight:bold;
-        transform:rotate(-45deg);
-        transform-origin:left top;
-        margin:-20px;
-    }
+            /* Vibrant modern gradient */
+            background: linear-gradient(
+                180deg,
+                #ff00bf 0%,     /* Neon coral */
+                #3c73ff 40%,    /* Hot pink */
+                #6f1596 75%,    /* Purple */
+                #942bc5 100%    /* Electric blue */
+            );
 
-    /* Globe */
-    .globe {
-        width:140px;
-        height:140px;
-        background:radial-gradient(circle at 30% 30%, #4fc3f7, #01579b);
-        border-radius:50%;
-        margin:40px auto 20px;
-        box-shadow:0 0 25px rgba(79,195,247,0.8);
-    }
+            padding: 50px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            color: #ffffff;
+            box-shadow: 0 25px 50px rgba(119, 69, 172, 0.579);
+            position: relative;
+        }
 
-    /* Screens ring */
-    .screens {
-        display:flex;
-        justify-content:center;
-        gap:8px;
-        margin-bottom:20px;
-    }
+        .brand {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
 
-    .screen {
-        width:28px;
-        height:20px;
-        background:#263238;
-        border:2px solid #90caf9;
-    }
+        .main-title h1 {
+            font-size: 38px;
+            line-height: 1.1;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-shadow: 0 4px 10px rgba(102, 29, 170, 0.35);
+        }
 
-    /* Title */
-    .title {
-        text-align:center;
-        margin-top:20px;
-    }
+        .subtitle {
+            font-size: 18px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
 
-    .title h1 {
-        font-size:26px;
-        margin:0;
-        font-weight:bold;
-    }
+        .footer {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-top: 1px solid rgba(54, 35, 201, 0.3);
+            padding-top: 20px;
+        }
 
-    .title h2 {
-        font-size:22px;
-        margin:5px 0 0;
-        font-weight:normal;
-    }
+        .special-edition {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
 
-    /* Authors */
-    .authors {
-        position:absolute;
-        bottom:60px;
-        width:100%;
-        text-align:center;
-        font-size:14px;
-        color:#bbdefb;
-    }
+        .author-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+            text-transform: uppercase;
+        }
 
-    /* Publisher */
-    .publisher {
-        position:absolute;
-        bottom:20px;
-        width:100%;
-        text-align:center;
-        font-size:14px;
-        font-weight:bold;
-        letter-spacing:1px;
-    }
-</style>
+        .author-photo {
+            width: 100px;
+            height: 120px;
+            border: 3px solid #ffffff;
+            background-color: #ffffff;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(94, 30, 206, 0.2);
+        }
+
+        .author-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="book">
+    <div class="book-cover">
+        <div class="header">
+            <p class="brand">SEC</p>
+        </div>
+        
+        <div class="main-title">
+            <h1>FUNDAMENTALS OF WEB APPLICATION DEVELOPMENT</h1>
+        </div>
 
-    <div class="ribbon">NEW</div>
+        <div class="subtitle">
+            <p>A JOURNEY OF HOPE, GROWTH, AND PURPOSE<br>
+Updated for 2025</p>
 
-    <div class="globe"></div>
+        </div>
 
-    <div class="screens">
-        <div class="screen"></div>
-        <div class="screen"></div>
-        <div class="screen"></div>
-        <div class="screen"></div>
-        <div class="screen"></div>
+        <div class="footer">
+            <div class="footer-text">
+                <p class="special-edition">SPECIAL EDITION</p>
+                <p class="author-name">PRIYADHARSHINI S N  </p>
+            </div>
+            
+        </div>
     </div>
-
-    <div class="title">
-        <h1>Fundamentals of</h1>
-        <h2>Web Development</h2>
-    </div>
-
-    <div class="authors">
-        Randy Connolly &nbsp;|&nbsp; Ricardo Hoar
-    </div>
-
-    <div class="publisher">
-        PEARSON
-    </div>
-
-</div>
 
 </body>
 </html>
+
 ```
 ## OUTPUT:
-<img width="1910" height="1018" alt="Screenshot 2025-12-23 102238" src="https://github.com/user-attachments/assets/274b2f6d-663e-4fa3-8e1e-2b09c0a4a11b" />
+<img width="1919" height="1077" alt="Screenshot 2025-12-27 130641" src="https://github.com/user-attachments/assets/e9159f29-eafc-48c4-9a16-8c07ef004e4a" />
 
 
 ## RESULT:
